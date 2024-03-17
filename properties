@@ -1,0 +1,25 @@
+In Telethon, a message is represented by the `Message` class. Here are some of the properties and methods available for this class:
+
+**Properties:**
+1. `id`: The unique identifier of the message.
+2. `date`: The date and time when the message was sent.
+3. `sender_id`: The ID of the sender of the message.
+4. `chat_id`: The ID of the chat where the message was sent.
+5. `message`: The text of the message.
+6. `media`: Any media associated with the message (e.g., photos, documents).
+7. `reply_to_msg_id`: The ID of the message to which this message is a reply.
+8. `fwd_from`: Information about the forward (if the message is a forward).
+9. `via_bot_id`: The ID of the bot through which the message was sent.
+10. `reply_markup`: The reply markup associated with the message.
+
+**Methods:**
+1. `get_sender()` / `get_sender_entity()`: Retrieves information about the sender of the message.
+2. `get_chat() / `get_chat_entity()`: Retrieves information about the chat where the message was sent.
+3. `reply()`: Sends a reply to the message.
+4. `forward_to()`: Forwards the message to another chat.
+5. `delete()`: Deletes the message.
+6. `edit()`: Edits the message.
+7. `download_media()`: Downloads the media associated with the message.
+8. `get_reply_message()`: Retrieves the message to which this message is a reply.
+
+These are some of the common properties and methods available for the `Message` class in Telethon. Depending on your specific use case, you may find additional properties and methods in the documentation or by exploring the source code of Telethon.
